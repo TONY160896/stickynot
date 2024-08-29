@@ -8,11 +8,75 @@
     box-sizing: border-box;
     font-weight: normal;
   }
-  img{
-      width:100%;      
-      height: auto;
-  }
+  
 
-  .container{
-    background-color: aqua
+  body {
+    background-image: url(/images/bg.png);
+   
+    position: relative;
+    }
+
+    .container.header {
+      display: flex;
+      justify-content: center;
   }
+  .headerstrip {
+    border: 2px solid white;
+    text-align: center;
+    padding: 25px;
+    width: 358px;
+    height: fit-content;
+    margin-top: 29px;
+    display: flex;
+    justify-content: space-between;
+  }
+  h2.heading {
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+.heading span {
+  color: bisque;
+  font-size: 20px;
+}
+.add {
+  justify-content: center;
+  padding: 23px;
+  /* max-width: 112px; */
+  /* width: 97px; */
+}
+.add button {
+  background: transparent;
+  border: none;
+  
+}
+.add button img {
+  width: 46px;
+  cursor: pointer;
+}
+.add button img:hover {
+  box-shadow: 0 4px 8px rgb(247, 2, 2); /* Add shadow on hover */
+}
+.add button img:active {
+  transform: scale(0.95); /* Slightly scale down on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+
+.sticky {
+    background-color: #f4f4f4; /* Background color of sticky notes */
+    border: 1px solid #ccc; /* Border around sticky notes */
+    padding: 16px; /* Padding inside sticky notes */
+    border-radius: 4px; /* Rounded corners for sticky notes */
+    width: calc(20% - 16px); /* Width of each sticky note, adjusted for gap */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Shadow effect for sticky notes */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+section {
+  margin-top: 68px;
+}
+.stickyContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allows sticky notes to wrap onto new lines */
+  gap: 16px; /* Space between sticky notes */
+  padding: 16px; /* Space around the container */
+}
